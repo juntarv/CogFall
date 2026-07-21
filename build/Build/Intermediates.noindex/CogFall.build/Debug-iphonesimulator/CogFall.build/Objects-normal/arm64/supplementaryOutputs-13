@@ -1,0 +1,23 @@
+{
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/CogFall/Components/ScreenHeader.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/ScreenHeader.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/ScreenHeader.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/ScreenHeader.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/ScreenHeader.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/ScreenHeader.swiftdeps"
+  },
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/CogFall/Views/Settings/SettingsView.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/SettingsView.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/SettingsView.swiftdeps"
+  },
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/CogFall/Views/Splash/SplashScreen.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/SplashScreen.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/SplashScreen.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/SplashScreen.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/SplashScreen.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/arm64/SplashScreen.swiftdeps"
+  }
+}

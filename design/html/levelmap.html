@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390, initial-scale=1">
+<title>CogFall — The Conduit</title>
+<style>
+:root{
+  --bg:#0C2529;--surface:#123138;--surface2:#17414A;--teal:#1C6E74;
+  --brass:#F2A93B;--brass-hi:#FFCE7A;--brass-deep:#B9761E;--power:#FFD27A;--rust:#C4502E;
+  --text:#F4E9D6;--text2:#93B2B6;--text3:#5E7B80;--hair:rgba(244,233,214,.10);
+  --ff-display:"Futura","Century Gothic","Avenir Next",sans-serif;
+  --ff-body:"Avenir Next","Avenir",-apple-system,sans-serif;
+  --ff-plate:"Copperplate","Copperplate Gothic Bold","Futura",serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:390px;height:844px}
+body{font-family:var(--ff-body);color:var(--text);background:var(--bg);overflow:hidden;-webkit-font-smoothing:antialiased}
+.screen{position:relative;width:390px;height:844px;overflow:hidden}
+.bg{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% -6%,#1c4a51 0%,#0f2e33 46%,#07161a 100%)}
+.grain{position:absolute;inset:0;opacity:.05;mix-blend-mode:overlay;background-image:radial-gradient(rgba(255,255,255,.7) .5px,transparent .6px);background-size:3px 3px}
+.vig{position:absolute;inset:0;box-shadow:inset 0 0 160px 34px rgba(0,0,0,.6);pointer-events:none}
+.gear{position:absolute;display:block}
+.eyebrow{font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.26em;font-size:12px;color:var(--brass);font-weight:700}
+
+/* header */
+.top{position:absolute;top:20px;left:20px;right:20px;display:flex;align-items:center;gap:14px;z-index:4}
+.back{width:46px;height:46px;flex:none;border-radius:50%;background:radial-gradient(circle at 38% 30%,#1d4c53,#0d2a2f 72%);border:1.5px solid rgba(242,169,59,.5);display:grid;place-items:center;box-shadow:0 8px 18px rgba(0,0,0,.5)}
+.back svg{stroke:#FFCE7A;stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.ttl{display:flex;flex-direction:column;line-height:1.05}
+.ttl .h{font-family:var(--ff-display);font-weight:800;font-size:26px;letter-spacing:.01em}
+.prog{margin-left:auto;text-align:right}
+.prog .k{font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.16em;font-size:9px;color:var(--text3);font-weight:700}
+.prog .v{font-family:var(--ff-display);font-weight:800;font-size:20px;color:var(--brass)}
+
+/* conduit */
+.conduit{position:absolute;inset:82px 0 0 0}
+.node{position:absolute;display:flex;flex-direction:column;align-items:center;gap:7px;transform:translate(-50%,-50%)}
+.disc{position:relative;width:86px;height:86px;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 38% 30%,#1d5058,#0e2c31 72%);border:2px solid rgba(242,169,59,.45);
+  box-shadow:0 10px 22px rgba(0,0,0,.5),inset 0 -6px 12px rgba(0,0,0,.35)}
+.node.cur .disc{width:104px;height:104px;border-color:var(--power);box-shadow:0 0 30px 6px rgba(255,210,122,.5),0 12px 24px rgba(0,0,0,.5)}
+.node.lock .disc{border-color:rgba(147,178,182,.28);filter:saturate(.5)}
+.name{font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.1em;font-size:11px;font-weight:700;color:var(--text)}
+.node.lock .name{color:var(--text3)}
+.stars{font-size:12px;letter-spacing:2px;color:var(--brass)}
+.stars .off{color:rgba(147,178,182,.35)}
+.badge{position:absolute;top:-6px;right:-6px;padding:3px 8px;border-radius:99px;background:linear-gradient(180deg,#FFDC8E,#F2A93B);color:#3A2408;font-family:var(--ff-display);font-weight:800;font-size:11px;box-shadow:0 3px 8px rgba(0,0,0,.4)}
+.resume{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);padding:5px 12px;border-radius:99px;background:linear-gradient(180deg,#FFDC8E,#F2A93B 50%,#C9861F);border:1px solid #7A4B12;color:#3A2408;font-family:var(--ff-display);font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 6px 14px rgba(242,169,59,.4)}
+.lockico{position:absolute;bottom:-4px;right:-2px;width:26px;height:26px;border-radius:50%;background:#0c2429;border:1px solid rgba(147,178,182,.4);display:grid;place-items:center}
+.lockico svg{stroke:#93B2B6;stroke-width:2;fill:none}
+
+/* overdrive rail */
+.od{position:absolute;left:20px;right:20px;bottom:34px;height:88px;border-radius:22px;overflow:hidden;
+  background:linear-gradient(180deg,rgba(63,32,20,.92),rgba(30,15,9,.95));border:1px solid rgba(242,169,59,.4);
+  box-shadow:0 16px 32px rgba(0,0,0,.55),inset 0 2px 0 rgba(255,255,255,.06);display:flex;align-items:center;padding:0 20px;gap:14px}
+.od .flare{position:absolute;right:-30px;top:-40px;width:150px;height:150px;opacity:.2}
+.od .disc2{width:60px;height:60px;flex:none;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 40% 32%,#C4502E,#5a1f10);box-shadow:0 0 20px rgba(196,80,46,.5),inset 0 -4px 8px rgba(0,0,0,.4)}
+.od .col{display:flex;flex-direction:column;line-height:1.1}
+.od .col .k{font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.18em;font-size:10px;color:#FFB98C;font-weight:700}
+.od .col .h{font-family:var(--ff-display);font-weight:800;font-size:22px;color:var(--text);letter-spacing:.02em}
+.od .col .s{font-size:11px;color:var(--text2)}
+.od .go{margin-left:auto;padding:12px 18px;border-radius:16px;background:linear-gradient(180deg,#FFDC8E,#F2A93B 45%,#C9861F);border:1px solid #7A4B12;box-shadow:0 8px 18px rgba(242,169,59,.4);font-family:var(--ff-display);font-weight:800;font-size:14px;color:#3A2408;text-transform:uppercase;letter-spacing:.06em}
+</style>
+</head>
+<body>
+<div class="screen">
+  <div class="bg"></div>
+  <svg width="0" height="0" aria-hidden="true"><defs>
+    <radialGradient id="gBrass" cx="36%" cy="30%" r="80%"><stop offset="0" stop-color="#FFE7B4"/><stop offset=".40" stop-color="#F2A93B"/><stop offset=".78" stop-color="#B9761E"/><stop offset="1" stop-color="#6E430E"/></radialGradient>
+    <radialGradient id="gSteel" cx="36%" cy="30%" r="80%"><stop offset="0" stop-color="#D4E8EA"/><stop offset=".5" stop-color="#7C9EA3"/><stop offset="1" stop-color="#274A50"/></radialGradient>
+    <radialGradient id="gDark" cx="36%" cy="30%" r="80%"><stop offset="0" stop-color="#255057"/><stop offset="1" stop-color="#0C282D"/></radialGradient>
+    <symbol id="cog" viewBox="0 0 120 120">
+      <g><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(0 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(30 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(60 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(90 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(120 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(150 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(180 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(210 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(240 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(270 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(300 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(330 60 60)"/><circle cx="60" cy="60" r="43"/></g>
+      <circle cx="60" cy="60" r="31" fill="none" stroke="rgba(0,0,0,.16)" stroke-width="2"/>
+      <g stroke="rgba(0,0,0,.2)" stroke-width="7" stroke-linecap="round" fill="none"><line x1="60" y1="24" x2="60" y2="96"/><line x1="24" y1="60" x2="96" y2="60"/><line x1="35" y1="35" x2="85" y2="85"/><line x1="85" y1="35" x2="35" y2="85"/></g>
+      <circle cx="60" cy="60" r="16" fill="#0C2529"/><circle cx="60" cy="60" r="16" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="2"/>
+    </symbol>
+  </defs></svg>
+
+  <!-- header -->
+  <div class="top">
+    <div class="back"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></div>
+    <div class="ttl"><span class="eyebrow">Campaign</span><span class="h">The Conduit</span></div>
+    <div class="prog"><div class="k">Mechanisms</div><div class="v">6 / 24</div></div>
+  </div>
+
+  <!-- conduit path -->
+  <div class="conduit">
+    <svg width="390" height="640" viewBox="0 0 390 640" style="position:absolute;inset:0">
+      <path d="M300 96 C 360 150, 360 200, 300 236 C 210 290, 120 250, 96 320 C 70 396, 250 400, 300 470 C 330 512, 300 556, 210 560"
+        fill="none" stroke="rgba(28,110,116,.55)" stroke-width="16" stroke-linecap="round"/>
+      <path d="M300 96 C 360 150, 360 200, 300 236 C 210 290, 120 250, 96 320 C 70 396, 250 400, 300 470 C 330 512, 300 556, 210 560"
+        fill="none" stroke="rgba(242,169,59,.28)" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"/>
+    </svg>
+
+    <!-- nodes -->
+    <div class="node" style="left:300px;top:96px">
+      <div class="disc"><span class="badge">05</span><svg width="60" height="60" viewBox="0 0 120 120"><use href="#cog" fill="url(#gBrass)"/></svg></div>
+      <div class="name">Wind-Up Lark</div><div class="stars">★★★</div>
+    </div>
+    <div class="node" style="left:96px;top:236px">
+      <div class="disc"><span class="badge">06</span><svg width="60" height="60" viewBox="0 0 120 120"><use href="#cog" fill="url(#gBrass)"/></svg></div>
+      <div class="name">Brass Orrery</div><div class="stars">★★<span class="off">★</span></div>
+    </div>
+    <div class="node cur" style="left:300px;top:320px">
+      <div class="disc"><span class="badge">07</span><svg width="74" height="74" viewBox="0 0 120 120"><use href="#cog" fill="url(#gBrass)"/></svg>
+        <span class="resume">Resume</span></div>
+      <div class="name" style="margin-top:8px;color:var(--power)">Escapement Gate</div>
+    </div>
+    <div class="node lock" style="left:96px;top:470px">
+      <div class="disc"><svg width="58" height="58" viewBox="0 0 120 120" style="opacity:.7"><use href="#cog" fill="url(#gDark)"/></svg>
+        <span class="lockico"><svg width="12" height="12" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span></div>
+      <div class="name">Sunflower Rig</div>
+    </div>
+    <div class="node lock" style="left:250px;top:560px">
+      <div class="disc"><svg width="52" height="52" viewBox="0 0 120 120" style="opacity:.7"><use href="#cog" fill="url(#gDark)"/></svg>
+        <span class="lockico"><svg width="12" height="12" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span></div>
+      <div class="name">Tidal Regulator</div>
+    </div>
+  </div>
+
+  <!-- overdrive endless rail -->
+  <div class="od">
+    <svg class="flare gear" viewBox="0 0 120 120"><use href="#cog" fill="#C4502E"/></svg>
+    <div class="disc2"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFE7B4" stroke-width="2" stroke-linecap="round"><path d="M13 2L4 14h6l-1 8 9-12h-6z" fill="#FFE7B4" stroke="none"/></svg></div>
+    <div class="col"><span class="k">Endless mode</span><span class="h">Overdrive</span><span class="s">Keep it spinning · high 42,180</span></div>
+    <div class="go">Run</div>
+  </div>
+
+  <div class="grain"></div><div class="vig"></div>
+</div>
+</body>
+</html>

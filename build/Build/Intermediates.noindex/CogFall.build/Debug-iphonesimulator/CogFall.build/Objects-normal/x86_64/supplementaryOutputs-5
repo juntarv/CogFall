@@ -1,0 +1,23 @@
+{
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/CogFall/Game/GameScene.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameScene.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameScene.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameScene.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameScene.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameScene.swiftdeps"
+  },
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/CogFall/Game/GameState.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameState.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameState.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameState.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameState.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameState.swiftdeps"
+  },
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/CogFall/Views/Game/GamePlayView.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GamePlayView.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GamePlayView.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GamePlayView.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GamePlayView.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GamePlayView.swiftdeps"
+  }
+}

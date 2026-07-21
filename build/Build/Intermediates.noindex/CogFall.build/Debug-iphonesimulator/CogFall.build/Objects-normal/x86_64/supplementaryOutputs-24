@@ -1,0 +1,23 @@
+{
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/DerivedSources/CoreDataGenerated/CogFall/CogFall+CoreDataModel.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/CogFall+CoreDataModel.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/CogFall+CoreDataModel.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/CogFall+CoreDataModel.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/CogFall+CoreDataModel.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/CogFall+CoreDataModel.swiftdeps"
+  },
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/DerivedSources/CoreDataGenerated/CogFall/PlayerStats+CoreDataProperties.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/PlayerStats+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/PlayerStats+CoreDataProperties.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/PlayerStats+CoreDataProperties.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/PlayerStats+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/PlayerStats+CoreDataProperties.swiftdeps"
+  },
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps"
+  }
+}

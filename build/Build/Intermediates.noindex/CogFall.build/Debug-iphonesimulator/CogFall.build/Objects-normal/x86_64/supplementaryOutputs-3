@@ -1,0 +1,23 @@
+{
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/CogFall/Game/GameLogic.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameLogic.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameLogic.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameLogic.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameLogic.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/GameLogic.swiftdeps"
+  },
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/CogFall/Views/Conduit/ConduitView.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/ConduitView.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/ConduitView.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/ConduitView.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/ConduitView.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/ConduitView.swiftdeps"
+  },
+  "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/CogFall/Views/Foundry/FoundryView.swift" : {
+    "const-values" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/FoundryView.swiftconstvalues",
+    "dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/FoundryView.d",
+    "diagnostics" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/FoundryView.dia",
+    "object" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/FoundryView.o",
+    "swift-dependencies" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex/CogFall.build/Debug-iphonesimulator/CogFall.build/Objects-normal/x86_64/FoundryView.swiftdeps"
+  }
+}

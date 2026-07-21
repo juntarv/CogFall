@@ -1,0 +1,79 @@
+/* =========================================================================
+   CogFall — Design Tokens
+   Clockwork-workshop-at-night look. ONE dominant color family (deep teal)
+   + ONE accent (brass amber). Rust is a functional-only danger token.
+   Extreme type weights (200 / 800), ~3x jumps between type-scale steps,
+   8px spacing scale. Bans the generic defaults (Inter/Roboto, purple-on-
+   white gradients, rows of identical rounded cards).
+   These tokens are mirrored by design/html/*.html and by DESIGN.md.
+   ========================================================================= */
+:root {
+  /* ---- Dominant family: deep teal / oiled-metal dark ------------------- */
+  --color-abyss:        #08191C; /* deepest background well               */
+  --color-bg:           #0C2529; /* primary app background                */
+  --color-surface:      #123138; /* raised panel / card                   */
+  --color-surface-2:    #17414A; /* raised-2 / active row                 */
+  --color-teal:         #1C6E74; /* structural brand teal (frames, rails) */
+  --color-teal-deep:    #124A50; /* teal shadow / conduit                 */
+
+  /* ---- Accent family: brass amber (the ONE accent) -------------------- */
+  --color-brass:        #F2A93B; /* primary accent — CTAs, live gears     */
+  --color-brass-hi:     #FFCE7A; /* brass highlight / bevel light         */
+  --color-brass-deep:   #B9761E; /* brass shadow                          */
+  --color-brass-edge:   #7A4B12; /* engraved edge / stamped rim           */
+  --color-power:        #FFD27A; /* "mechanism alive" glow (brass family) */
+
+  /* ---- Functional-only ------------------------------------------------ */
+  --color-rust:         #C4502E; /* heat / jam / destructive              */
+  --color-rust-deep:    #7C2E19;
+
+  /* ---- Text on dark --------------------------------------------------- */
+  --color-text:         #F4E9D6; /* warm cream — primary                  */
+  --color-text-2:       #93B2B6; /* cool steel — secondary                */
+  --color-text-3:       #5E7B80; /* muted                                 */
+  --color-hairline:     rgba(244, 233, 214, 0.10);
+
+  /* ---- Spacing — 8px scale (with a 4px half-step) --------------------- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 16px;
+  --sp-4: 24px;
+  --sp-5: 32px;
+  --sp-6: 48px;
+  --sp-7: 64px;
+  --sp-8: 96px;
+
+  /* ---- Radii — mechanical, restrained --------------------------------- */
+  --radius-sm:   8px;
+  --radius-md:  14px;
+  --radius-lg:  22px;
+  --radius-pill: 999px;
+
+  /* ---- Type families — NO Inter/Roboto. Engraved-brass character ------ */
+  --font-display: "Futura", "Century Gothic", "Avenir Next", sans-serif; /* logo, big titles */
+  --font-body:    "Avenir Next", "Avenir", -apple-system, sans-serif;    /* copy */
+  --font-plate:   "Copperplate", "Copperplate Gothic Bold", "Futura", serif; /* engraved caps labels */
+  --font-num:     "Futura", "DIN Alternate", "Avenir Next", sans-serif;  /* scores / counters */
+
+  /* ---- Weights — extremes only ---------------------------------------- */
+  --weight-thin:  200;
+  --weight-book:  400;
+  --weight-med:   600;
+  --weight-black: 800;
+
+  /* ---- Type scale — ~3x jumps ----------------------------------------- */
+  --fs-eyebrow: 12px;  /* engraved plate labels (uppercase, tracked)      */
+  --fs-body:    15px;  /* body copy                                        */
+  --fs-title:   22px;  /* section titles                                   */
+  --fs-display: 40px;  /* screen headers                                   */
+  --fs-hero:    72px;  /* logo / hero counters (~3x display, ~5x body)     */
+
+  /* ---- Elevation ------------------------------------------------------ */
+  --shadow-card:  0 2px 4px rgba(0,0,0,.35), 0 16px 32px rgba(0,0,0,.45);
+  --shadow-brass: 0 10px 26px rgba(242,169,59,.32), 0 3px 6px rgba(0,0,0,.45);
+  --shadow-hero:  0 24px 60px rgba(0,0,0,.55);
+
+  /* ---- Tracking ------------------------------------------------------- */
+  --track-plate: 0.28em;
+  --track-tight: -0.02em;
+}

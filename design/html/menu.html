@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390, initial-scale=1">
+<title>CogFall — Main Menu</title>
+<style>
+:root{
+  --abyss:#08191C;--bg:#0C2529;--surface:#123138;--surface2:#17414A;
+  --teal:#1C6E74;--teal-deep:#124A50;
+  --brass:#F2A93B;--brass-hi:#FFCE7A;--brass-deep:#B9761E;--brass-edge:#7A4B12;
+  --power:#FFD27A;--rust:#C4502E;
+  --text:#F4E9D6;--text2:#93B2B6;--text3:#5E7B80;--hair:rgba(244,233,214,.10);
+  --ff-display:"Futura","Century Gothic","Avenir Next",sans-serif;
+  --ff-body:"Avenir Next","Avenir",-apple-system,sans-serif;
+  --ff-plate:"Copperplate","Copperplate Gothic Bold","Futura",serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:390px;height:844px}
+body{font-family:var(--ff-body);color:var(--text);background:var(--bg);overflow:hidden;-webkit-font-smoothing:antialiased}
+.screen{position:relative;width:390px;height:844px;overflow:hidden}
+.bg{position:absolute;inset:0;background:radial-gradient(125% 78% at 50% -12%,#1e535a 0%,#0f2e33 44%,#08181b 100%)}
+.bg::after{content:"";position:absolute;inset:0;background:radial-gradient(115% 55% at 50% 118%,rgba(255,210,122,.16),transparent 62%)}
+.grain{position:absolute;inset:0;opacity:.05;mix-blend-mode:overlay;background-image:radial-gradient(rgba(255,255,255,.7) .5px,transparent .6px);background-size:3px 3px;pointer-events:none}
+.vig{position:absolute;inset:0;box-shadow:inset 0 0 170px 34px rgba(0,0,0,.6);pointer-events:none}
+.gear{position:absolute;display:block}
+.eyebrow{font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.28em;font-size:12px;font-weight:700;color:var(--brass)}
+
+/* status */
+.status{position:absolute;top:16px;left:24px;right:24px;display:flex;justify-content:space-between;font-size:13px;color:var(--text);font-weight:600;font-family:var(--ff-display)}
+.status .dots{letter-spacing:2px}
+
+/* corner buttons */
+.corner{position:absolute;top:60px;width:48px;height:48px;border-radius:50%;
+  background:radial-gradient(circle at 38% 30%,#1d4c53,#0d2a2f 72%);
+  border:1.5px solid rgba(242,169,59,.5);
+  box-shadow:0 8px 18px rgba(0,0,0,.5),inset 0 2px 5px rgba(255,206,122,.22);
+  display:grid;place-items:center}
+.corner.l{left:24px}.corner.r{right:24px}
+
+/* logo */
+.logo-wrap{position:absolute;top:108px;left:0;right:0;text-align:center}
+.driver{position:absolute;top:-26px;left:50%;transform:translateX(-50%);width:220px;height:220px;opacity:.5;filter:drop-shadow(0 0 26px rgba(242,169,59,.35))}
+.logo{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:2px;
+  font-family:var(--ff-display);font-weight:800;font-size:66px;letter-spacing:-.02em;line-height:1;
+  background:linear-gradient(180deg,#FFE7B4 0%,#F2A93B 52%,#B9761E 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 10px 14px rgba(0,0,0,.55))}
+.logo .o{width:.86em;height:.86em;margin:0 -.02em;filter:drop-shadow(0 6px 8px rgba(0,0,0,.5))}
+.tagline{margin-top:18px;display:inline-block;padding:7px 18px;border-radius:999px;
+  background:rgba(9,26,29,.55);border:1px solid var(--hair);backdrop-filter:blur(2px)}
+.tagline span{font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.24em;font-size:11px;color:var(--text2);font-weight:700}
+
+/* PLAY plate */
+.play{position:absolute;left:32px;right:32px;top:388px;height:96px;border-radius:22px;
+  background:linear-gradient(180deg,#FFDC8E 0%,#F2A93B 42%,#C9861F 100%);
+  border:1px solid #7A4B12;
+  box-shadow:0 14px 30px rgba(242,169,59,.4),0 4px 8px rgba(0,0,0,.5),inset 0 2px 0 rgba(255,255,255,.6),inset 0 -8px 16px rgba(122,75,18,.55);
+  display:flex;align-items:center;padding:0 26px;overflow:hidden}
+.play .halo{position:absolute;right:-30px;top:-40px;width:180px;height:180px;opacity:.28}
+.play .txt{display:flex;flex-direction:column}
+.play .k{font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.24em;font-size:11px;color:#6E430E;font-weight:700}
+.play .big{font-family:var(--ff-display);font-weight:800;font-size:40px;color:#3A2408;letter-spacing:.02em;line-height:1;text-shadow:0 1px 0 rgba(255,255,255,.45)}
+.play .go{margin-left:auto;width:56px;height:56px;border-radius:50%;background:radial-gradient(circle at 40% 32%,#3A2408,#1c1204);display:grid;place-items:center;box-shadow:inset 0 2px 4px rgba(255,206,122,.3)}
+.play .go svg{fill:none;stroke:#FFCE7A;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+
+/* two medallion actions */
+.acts{position:absolute;left:32px;right:32px;top:512px;display:flex;gap:20px;justify-content:center}
+.medallion{flex:1;display:flex;flex-direction:column;align-items:center;gap:12px}
+.med-disc{position:relative;width:118px;height:118px;border-radius:50%;
+  background:radial-gradient(circle at 38% 30%,#1d5058,#0e2c31 72%);
+  border:2px solid rgba(242,169,59,.55);
+  box-shadow:0 12px 26px rgba(0,0,0,.5),inset 0 3px 8px rgba(255,206,122,.22),inset 0 -8px 14px rgba(0,0,0,.35);
+  display:grid;place-items:center}
+.med-disc .ring{position:absolute;inset:9px;border-radius:50%;border:1px dashed rgba(242,169,59,.28)}
+.med-label{font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700;color:var(--text)}
+.med-sub{font-size:11px;color:var(--text2);margin-top:-6px;letter-spacing:.02em}
+
+/* best rail */
+.rail{position:absolute;left:24px;right:24px;bottom:34px;height:78px;border-radius:18px;
+  background:linear-gradient(180deg,rgba(23,65,74,.94),rgba(11,34,38,.96));
+  border-top:1.5px solid rgba(242,169,59,.4);
+  box-shadow:0 -1px 0 rgba(0,0,0,.4),0 16px 30px rgba(0,0,0,.5);
+  display:flex;align-items:center;padding:0 22px;gap:16px}
+.rail .cog{width:44px;height:44px;flex:none;filter:drop-shadow(0 3px 4px rgba(0,0,0,.5))}
+.rail .col{display:flex;flex-direction:column;line-height:1.1}
+.rail .col .k{font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.2em;font-size:10px;color:var(--text3);font-weight:700}
+.rail .col .v{font-family:var(--ff-display);font-weight:800;font-size:26px;color:var(--text);letter-spacing:.02em}
+.rail .v .u{font-size:12px;color:var(--brass);font-weight:800;margin-left:2px}
+.rail .div{width:1px;height:40px;background:var(--hair);margin:0 4px}
+.rail .col.r{margin-left:auto;text-align:right;align-items:flex-end}
+</style>
+</head>
+<body>
+<div class="screen">
+  <div class="bg"></div>
+
+  <!-- shared gear defs -->
+  <svg width="0" height="0" aria-hidden="true"><defs>
+    <radialGradient id="gBrass" cx="36%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#FFE7B4"/><stop offset=".40" stop-color="#F2A93B"/>
+      <stop offset=".78" stop-color="#B9761E"/><stop offset="1" stop-color="#6E430E"/>
+    </radialGradient>
+    <radialGradient id="gSteel" cx="36%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#D4E8EA"/><stop offset=".5" stop-color="#7C9EA3"/><stop offset="1" stop-color="#274A50"/>
+    </radialGradient>
+    <radialGradient id="gDark" cx="36%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#255057"/><stop offset="1" stop-color="#0C282D"/>
+    </radialGradient>
+    <symbol id="cog" viewBox="0 0 120 120">
+      <g>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(0 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(30 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(60 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(90 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(120 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(150 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(180 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(210 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(240 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(270 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(300 60 60)"/>
+        <rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(330 60 60)"/>
+        <circle cx="60" cy="60" r="43"/>
+      </g>
+      <circle cx="60" cy="60" r="31" fill="none" stroke="rgba(0,0,0,.16)" stroke-width="2"/>
+      <g stroke="rgba(0,0,0,.2)" stroke-width="7" stroke-linecap="round" fill="none">
+        <line x1="60" y1="24" x2="60" y2="96"/><line x1="24" y1="60" x2="96" y2="60"/>
+        <line x1="35" y1="35" x2="85" y2="85"/><line x1="85" y1="35" x2="35" y2="85"/>
+      </g>
+      <circle cx="60" cy="60" r="16" fill="#0C2529"/>
+      <circle cx="60" cy="60" r="16" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="2"/>
+    </symbol>
+  </defs></svg>
+
+  <!-- ambient decor gears -->
+  <svg class="gear" style="top:-70px;left:-80px;width:230px;height:230px;opacity:.20" viewBox="0 0 120 120"><use href="#cog" fill="url(#gDark)"/></svg>
+  <svg class="gear" style="bottom:150px;right:-70px;width:200px;height:200px;opacity:.16" viewBox="0 0 120 120"><use href="#cog" fill="url(#gDark)"/></svg>
+  <svg class="gear" style="bottom:120px;right:60px;width:96px;height:96px;opacity:.14" viewBox="0 0 120 120"><use href="#cog" fill="url(#gSteel)"/></svg>
+
+  <div class="status"><span>9:41</span><span class="dots">▮▮▮ ⛭ 100</span></div>
+
+  <!-- corner buttons -->
+  <div class="corner l" title="How to play">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFCE7A" stroke-width="2.2" stroke-linecap="round"><path d="M9.2 9a2.8 2.8 0 1 1 4.2 2.4c-.9.6-1.4 1.1-1.4 2.1"/><circle cx="12" cy="17" r=".6" fill="#FFCE7A" stroke="none"/></svg>
+  </div>
+  <div class="corner r" title="Settings">
+    <svg width="24" height="24" viewBox="0 0 120 120"><use href="#cog" fill="url(#gBrass)"/></svg>
+  </div>
+
+  <!-- logo -->
+  <div class="logo-wrap">
+    <svg class="driver gear" viewBox="0 0 120 120"><use href="#cog" fill="url(#gBrass)"/></svg>
+    <div class="logo">C<svg class="o gear" viewBox="0 0 120 120"><use href="#cog" fill="url(#gBrass)"/></svg>GFALL</div>
+    <div class="tagline"><span>Drop &middot; Mesh &middot; Power the machine</span></div>
+  </div>
+
+  <!-- PLAY -->
+  <div class="play">
+    <svg class="halo gear" viewBox="0 0 120 120"><use href="#cog" fill="#FFFFFF"/></svg>
+    <div class="txt"><div class="k">Campaign &middot; Bay 7 unlocked</div><div class="big">PLAY</div></div>
+    <div class="go"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5l10 7-10 7z" fill="#FFCE7A" stroke="none"/></svg></div>
+  </div>
+
+  <!-- medallion actions -->
+  <div class="acts">
+    <div class="medallion">
+      <div class="med-disc"><div class="ring"></div>
+        <svg width="66" height="66" viewBox="0 0 24 24" fill="none" stroke="#F2A93B" stroke-width="1.6"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="9" r="2.4"/><circle cx="9" cy="18" r="2.4"/><path d="M6 8.4v3.6a3 3 0 0 0 3 3h0M8.2 7.2l7.6 1.4M16.7 11.2l-6 5"/></svg>
+      </div>
+      <div style="text-align:center"><div class="med-label">Conduit</div><div class="med-sub">Level map</div></div>
+    </div>
+    <div class="medallion">
+      <div class="med-disc"><div class="ring"></div>
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#F2A93B" stroke-width="1.5"><circle cx="12" cy="9" r="5.2"/><path d="M12 6.2l.9 1.8 2 .3-1.5 1.4.4 2-1.8-1-1.8 1 .4-2L9.1 8.3l2-.3z" fill="#F2A93B" stroke="none"/><path d="M8.4 13.5L6.8 21l5.2-2.6L17.2 21l-1.6-7.5"/></svg>
+      </div>
+      <div style="text-align:center"><div class="med-label">Foundry</div><div class="med-sub">Achievements</div></div>
+    </div>
+  </div>
+
+  <!-- best rail -->
+  <div class="rail">
+    <svg class="cog gear" viewBox="0 0 120 120"><use href="#cog" fill="url(#gBrass)"/></svg>
+    <div class="col"><div class="k">Best mechanism</div><div class="v">18<span class="u">×3★</span></div></div>
+    <div class="div"></div>
+    <div class="col"><div class="k">Overdrive high</div><div class="v">42,180</div></div>
+    <div class="col r"><div class="k">Gears meshed</div><div class="v">1,204</div></div>
+  </div>
+
+  <div class="grain"></div><div class="vig"></div>
+</div>
+</body>
+</html>

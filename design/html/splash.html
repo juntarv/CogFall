@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390, initial-scale=1">
+<title>CogFall — Splash</title>
+<style>
+:root{
+  --bg:#0C2529;--brass:#F2A93B;--brass-hi:#FFCE7A;--text:#F4E9D6;--text2:#93B2B6;--hair:rgba(244,233,214,.10);
+  --ff-display:"Futura","Century Gothic","Avenir Next",sans-serif;
+  --ff-body:"Avenir Next","Avenir",-apple-system,sans-serif;
+  --ff-plate:"Copperplate","Copperplate Gothic Bold","Futura",serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:390px;height:844px}
+body{font-family:var(--ff-body);color:var(--text);background:var(--bg);overflow:hidden;-webkit-font-smoothing:antialiased}
+.screen{position:relative;width:390px;height:844px;overflow:hidden}
+.bg{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 42%,#1e535a 0%,#103035 45%,#07161a 100%)}
+.grain{position:absolute;inset:0;opacity:.05;mix-blend-mode:overlay;background-image:radial-gradient(rgba(255,255,255,.7) .5px,transparent .6px);background-size:3px 3px}
+.vig{position:absolute;inset:0;box-shadow:inset 0 0 180px 40px rgba(0,0,0,.62);pointer-events:none}
+.gear{position:absolute;display:block}
+.center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}
+.stack{position:relative;width:300px;height:300px;display:grid;place-items:center;margin-bottom:26px}
+.g1{width:280px;height:280px;filter:drop-shadow(0 0 34px rgba(242,169,59,.4))}
+.g2{width:150px;height:150px;position:absolute;left:-24px;top:8px;opacity:.85}
+.g3{width:110px;height:110px;position:absolute;right:-10px;bottom:6px;opacity:.8}
+.hub{position:absolute;width:74px;height:74px;border-radius:50%;background:radial-gradient(circle at 40% 32%,#3A2408,#160d03);display:grid;place-items:center;box-shadow:inset 0 2px 6px rgba(255,206,122,.35),0 6px 14px rgba(0,0,0,.5)}
+.logo{font-family:var(--ff-display);font-weight:800;font-size:58px;letter-spacing:-.02em;line-height:1;
+  background:linear-gradient(180deg,#FFE7B4 0%,#F2A93B 52%,#B9761E 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 12px rgba(0,0,0,.55))}
+.tag{margin-top:16px;font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.34em;font-size:11px;color:var(--text2);font-weight:700}
+.load{position:absolute;bottom:96px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:14px}
+.bar{width:150px;height:4px;border-radius:99px;background:rgba(244,233,214,.12);overflow:hidden}
+.bar i{display:block;width:64%;height:100%;background:linear-gradient(90deg,#B9761E,#FFCE7A)}
+.load .k{font-family:var(--ff-plate);text-transform:uppercase;letter-spacing:.3em;font-size:10px;color:var(--text2);font-weight:700}
+</style>
+</head>
+<body>
+<div class="screen">
+  <div class="bg"></div>
+  <svg width="0" height="0" aria-hidden="true"><defs>
+    <radialGradient id="gBrass" cx="36%" cy="30%" r="80%"><stop offset="0" stop-color="#FFE7B4"/><stop offset=".40" stop-color="#F2A93B"/><stop offset=".78" stop-color="#B9761E"/><stop offset="1" stop-color="#6E430E"/></radialGradient>
+    <radialGradient id="gSteel" cx="36%" cy="30%" r="80%"><stop offset="0" stop-color="#D4E8EA"/><stop offset=".5" stop-color="#7C9EA3"/><stop offset="1" stop-color="#274A50"/></radialGradient>
+    <radialGradient id="gDark" cx="36%" cy="30%" r="80%"><stop offset="0" stop-color="#255057"/><stop offset="1" stop-color="#0C282D"/></radialGradient>
+    <symbol id="cog" viewBox="0 0 120 120">
+      <g><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(0 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(30 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(60 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(90 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(120 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(150 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(180 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(210 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(240 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(270 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(300 60 60)"/><rect x="52.5" y="2" width="15" height="26" rx="3" transform="rotate(330 60 60)"/><circle cx="60" cy="60" r="43"/></g>
+      <circle cx="60" cy="60" r="31" fill="none" stroke="rgba(0,0,0,.16)" stroke-width="2"/>
+      <g stroke="rgba(0,0,0,.2)" stroke-width="7" stroke-linecap="round" fill="none"><line x1="60" y1="24" x2="60" y2="96"/><line x1="24" y1="60" x2="96" y2="60"/><line x1="35" y1="35" x2="85" y2="85"/><line x1="85" y1="35" x2="35" y2="85"/></g>
+      <circle cx="60" cy="60" r="16" fill="#0C2529"/><circle cx="60" cy="60" r="16" fill="none" stroke="rgba(0,0,0,.5)" stroke-width="2"/>
+    </symbol>
+  </defs></svg>
+
+  <svg class="gear" style="top:-60px;right:-70px;width:200px;height:200px;opacity:.12" viewBox="0 0 120 120"><use href="#cog" fill="url(#gDark)"/></svg>
+  <svg class="gear" style="bottom:-40px;left:-60px;width:180px;height:180px;opacity:.12" viewBox="0 0 120 120"><use href="#cog" fill="url(#gDark)"/></svg>
+
+  <div class="center">
+    <div class="stack">
+      <svg class="gear g1" viewBox="0 0 120 120"><use href="#cog" fill="url(#gBrass)"/></svg>
+      <svg class="gear g2" viewBox="0 0 120 120"><use href="#cog" fill="url(#gSteel)"/></svg>
+      <svg class="gear g3" viewBox="0 0 120 120"><use href="#cog" fill="url(#gBrass)"/></svg>
+      <div class="hub"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFCE7A" stroke-width="2" stroke-linecap="round"><path d="M12 3v4M12 17v4M4.9 7l2.8 2.8M16.3 14.2l2.8 2.8M3 12h4M17 12h4"/><circle cx="12" cy="12" r="2.4" fill="#FFCE7A" stroke="none"/></svg></div>
+    </div>
+    <div class="logo">COGFALL</div>
+    <div class="tag">The gravity machine shop</div>
+  </div>
+
+  <div class="load">
+    <div class="bar"><i></i></div>
+    <div class="k">Winding the mainspring</div>
+  </div>
+
+  <div class="grain"></div><div class="vig"></div>
+</div>
+</body>
+</html>
