@@ -53,7 +53,7 @@
 		3302DC40667D0DAF064389F4 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		4E121A1AACF2472F76AACF25 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		4EE763C93BE01B2A6F016DFB /* ViewPolish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPolish.swift; sourceTree = "<group>"; };
-		64A8CE69162639DD474DD783 /* CogFall.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CogFall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64A8CE69162639DD474DD783 /* CogFall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CogFall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D33279B4DD31C8EA03714B /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		7379708D404B98B040A70FAF /* PauseOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseOverlay.swift; sourceTree = "<group>"; };
 		840A67BBBF2D0C1202CE7238 /* FoundryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundryView.swift; sourceTree = "<group>"; };
@@ -284,8 +284,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 7674001492153A3CCF535455 /* Build configuration list for PBXProject "CogFall" */;
 			developmentRegion = en;
@@ -372,6 +370,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogfall;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -528,6 +529,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cogfall;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
