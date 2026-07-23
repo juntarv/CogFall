@@ -6,7 +6,7 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>1B745E6F-BB70-426E-961E-9C878369A704</key>
+		<key>114143A5-50E7-4B5E-8E75-C2AC1857BAB2</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,49 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>1B745E6F-BB70-426E-961E-9C878369A704.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>E</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>4</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>CogFall project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>CogFall</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project CogFall with scheme CogFall and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>806250268.50705099</real>
-			<key>timeStoppedRecording</key>
-			<real>806250271.29663503</real>
-			<key>title</key>
-			<string>Building project CogFall with scheme CogFall and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>1B745E6F-BB70-426E-961E-9C878369A704</string>
-		</dict>
-		<key>C27465EE-CDC7-45C5-BF23-4372F2CEADAF</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>C27465EE-CDC7-45C5-BF23-4372F2CEADAF.xcactivitylog</string>
+			<string>114143A5-50E7-4B5E-8E75-C2AC1857BAB2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,13 +40,55 @@
 			<key>signature</key>
 			<string>Building project CogFall with scheme CogFall and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>806250428.85947597</real>
+			<real>806490900.60378206</real>
 			<key>timeStoppedRecording</key>
-			<real>806250432.41059804</real>
+			<real>806490906.93621302</real>
 			<key>title</key>
 			<string>Building project CogFall with scheme CogFall and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>C27465EE-CDC7-45C5-BF23-4372F2CEADAF</string>
+			<string>114143A5-50E7-4B5E-8E75-C2AC1857BAB2</string>
+		</dict>
+		<key>FCAE538E-2434-4748-AFCF-046A66267C24</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FCAE538E-2434-4748-AFCF-046A66267C24.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>CogFall project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>CogFall</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project CogFall with scheme CogFall and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>806490932.699862</real>
+			<key>timeStoppedRecording</key>
+			<real>806490937.36456895</real>
+			<key>title</key>
+			<string>Building project CogFall with scheme CogFall and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>FCAE538E-2434-4748-AFCF-046A66267C24</string>
 		</dict>
 	</dict>
 </dict>

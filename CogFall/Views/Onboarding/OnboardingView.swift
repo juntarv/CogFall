@@ -49,7 +49,7 @@ struct OnboardingView: View {
                 .padding(.horizontal, 24).padding(.top, 20)
 
                 OnboardingHero(variant: slides[index].variant)
-                    .frame(height: 360)
+                    .frame(minHeight: 240, maxHeight: 360)
                     .padding(.horizontal, 24)
                     .padding(.top, 8)
                     .id(index)
@@ -65,10 +65,12 @@ struct OnboardingView: View {
                             .foregroundColor(Palette.brass))
                             .font(Typo.display(30))
                             .lineSpacing(2)
+                            .fixedSize(horizontal: false, vertical: true)
                         Text(slides[index].body)
                             .font(Typo.body(15))
                             .foregroundColor(Palette.text2)
                             .lineSpacing(3)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                 }

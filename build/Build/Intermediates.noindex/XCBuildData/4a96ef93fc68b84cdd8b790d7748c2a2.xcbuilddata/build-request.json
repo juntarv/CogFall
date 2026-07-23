@@ -16,17 +16,16 @@
   "hideShellScriptEnvironment" : false,
   "parameters" : {
     "action" : "build",
-    "activeArchitecture" : "undefined_arch",
+    "activeArchitecture" : "arm64",
     "activeRunDestination" : {
-      "disableOnlyActiveArch" : true,
+      "disableOnlyActiveArch" : false,
       "platform" : "iphonesimulator",
       "sdk" : "iphonesimulator26.2",
       "sdkVariant" : "iphonesimulator",
       "supportedArchitectures" : [
-        "i386",
-        "x86_64"
+        "arm64"
       ],
-      "targetArchitecture" : "undefined_arch"
+      "targetArchitecture" : "arm64"
     },
     "arenaInfo" : {
       "buildIntermediatesPath" : "/Users/juntarv/Desktop/AiProjects/SATOR/CogFall/build/Build/Intermediates.noindex",
@@ -47,9 +46,17 @@
       "synthesized" : {
         "table" : {
           "ACTION" : "build",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone18,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "26.2",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone18,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
           "ENABLE_PREVIEWS" : "NO",
           "ENABLE_XOJIT_PREVIEWS" : "YES",
-          "ONLY_ACTIVE_ARCH" : "YES"
+          "ONLY_ACTIVE_ARCH" : "YES",
+          "TARGET_DEVICE_IDENTIFIER" : "BCED9441-946C-481A-8BCC-91CAA99010BC",
+          "TARGET_DEVICE_MODEL" : "iPhone18,1",
+          "TARGET_DEVICE_OS_VERSION" : "26.2",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
         }
       }
     }

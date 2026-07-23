@@ -1,0 +1,38 @@
+{
+  "general": {
+    "primary_category": "GAMES",
+    "content_rights_third_party": false,
+    "copyright": "2026 CogFall"
+  },
+  "age_rating": "4plus",
+  "submit": {
+    "attach_build": true,
+    "submit_for_review": true
+  },
+  "locales": {
+    "primary": {
+      "subtitle": "Drop gears, power the machine",
+      "description": "CogFall is an offline physics puzzle about gravity, brass and good timing. Drop gears down a clockwork bay so their teeth bite into the gear beside them, and spin travels from the always-turning power spindle through the whole train until every target lamp lights and the mechanism comes alive.\n\nEvery gear you hold is Small, Medium or Large, with tooth count, radius and reach all in one. Aim a column, drop, and let the gear settle onto an axle within a tooth's reach of its neighbour. Mesh cleanly and the train grows; land badly and the gear jams, wobbles away and pushes the Heat meter toward rust. Meshed gears alternate spin direction, so later bays ask you to plan parity as well as position. Twenty-four authored bays wait along the Conduit — Wind-Up Lark, Brass Orrery, Escapement Gate, Tidal Regulator, Grand Escapement and more — each scored on gears used, spare gears and time powered, with up to three stars per bay. When the campaign is not enough, Overdrive runs endless: the bay grows taller, the spindle speeds up, new target lamps keep appearing, and you play until Heat maxes out.\n\nThe Foundry collects twelve stamped brass marques for milestones like First Bite, Clean Machine, Full Train and Master Wright, and tracks lifetime gears meshed alongside your Overdrive high score. The whole game is built for one hand, set in a deep-teal machine shop lit by warm brass, with haptics, screen shake and particle bursts you can dial down in Settings. Everything runs on your device: no accounts, no sign-in, no ads, no in-app purchases and no network connection.\n\nOpen a bay, pick a column, and drop the first gear. The shop is waiting to turn.",
+      "keywords": "gears,clockwork,physics,puzzle,drop,steampunk,brass,machine,logic,offline,arcade,tinker",
+      "promotional_text": "A gravity-fed machine shop in your pocket: drop brass gears, mesh a train, light every lamp. Offline, ad-free, no in-app purchases."
+    },
+    "en-US": {
+      "subtitle": "Drop gears, power the machine",
+      "description": "CogFall is an offline physics puzzle about gravity, brass and good timing. Drop gears down a clockwork bay so their teeth bite into the gear beside them, and spin travels from the always-turning power spindle through the whole train until every target lamp lights and the mechanism comes alive.\n\nEvery gear you hold is Small, Medium or Large, with tooth count, radius and reach all in one. Aim a column, drop, and let the gear settle onto an axle within a tooth's reach of its neighbour. Mesh cleanly and the train grows; land badly and the gear jams, wobbles away and pushes the Heat meter toward rust. Meshed gears alternate spin direction, so later bays ask you to plan parity as well as position. Twenty-four authored bays wait along the Conduit — Wind-Up Lark, Brass Orrery, Escapement Gate, Tidal Regulator, Grand Escapement and more — each scored on gears used, spare gears and time powered, with up to three stars per bay. When the campaign is not enough, Overdrive runs endless: the bay grows taller, the spindle speeds up, new target lamps keep appearing, and you play until Heat maxes out.\n\nThe Foundry collects twelve stamped brass marques for milestones like First Bite, Clean Machine, Full Train and Master Wright, and tracks lifetime gears meshed alongside your Overdrive high score. The whole game is built for one hand, set in a deep-teal machine shop lit by warm brass, with haptics, screen shake and particle bursts you can dial down in Settings. Everything runs on your device: no accounts, no sign-in, no ads, no in-app purchases and no network connection.\n\nOpen a bay, pick a column, and drop the first gear. The shop is waiting to turn.",
+      "keywords": "gears,clockwork,physics,puzzle,drop,steampunk,brass,machine,logic,offline,arcade,tinker",
+      "promotional_text": "A gravity-fed machine shop in your pocket: drop brass gears, mesh a train, light every lamp. Offline, ad-free, no in-app purchases."
+    },
+    "zh-Hans": {
+      "subtitle": "投下齿轮，点亮整台机器",
+      "description": "CogFall 是一款离线物理益智游戏，讲的是重力、黄铜与恰到好处的时机。把齿轮投进机械舱，让它的轮齿咬住旁边的齿轮，转动便会从始终不停的动力主轴一路传到整条齿轮链，直到每一盏目标灯亮起，整台机器随之苏醒。\n\n手中的齿轮分为小、中、大三种，齿数、半径与咬合范围三者合一。先选好落道再投下，让齿轮稳稳停在轴上，并落在邻齿的咬合范围之内。咬合顺利，齿轮链就会生长；落点不好，齿轮就会卡死、晃动着被丢弃，并把热度表推向锈红。啮合的齿轮转向交替，因此后面的机械舱不仅要算位置，还要算方向。沿着导管共有 24 座精心编排的机械舱——发条云雀、黄铜天象仪、擒纵之门、潮汐调节器、宏伟擒纵等等——每一座都按用掉的齿轮、剩余齿轮与通电时长计分，最多可得三颗星。若战役仍不过瘾，超速模式无尽运转：舱体不断加高，主轴越转越快，新的目标灯持续出现，直到热度表填满为止。\n\n铸造坊收藏十二枚黄铜纹章，对应初次咬合、精简机械、满链、大师匠人等里程碑，同时记录累计啮合齿轮数与超速模式最高分。整款游戏为单手操作而设计，场景是一间被暖黄铜光照亮的深青色机械工坊，触感反馈、震屏与粒子迸发都可以在设置中调低。一切都在你的设备上运行：无账号、无登录、无广告、无内购、无需联网。\n\n打开一座机械舱，选一条落道，投下第一颗齿轮。工坊正等着转起来。",
+      "keywords": "齿轮,机械,物理,益智,解谜,蒸汽朋克,黄铜,离线,单机,休闲,策略,下落",
+      "promotional_text": "口袋里的重力机械工坊：投下黄铜齿轮，串起齿轮链，点亮每一盏灯。离线运行，无广告，无内购。"
+    },
+    "zh-Hant": {
+      "subtitle": "投下齒輪，點亮整台機器",
+      "description": "CogFall 是一款離線物理益智遊戲，講的是重力、黃銅與恰到好處的時機。把齒輪投進機械艙，讓它的輪齒咬住旁邊的齒輪，轉動便會從始終不停的動力主軸一路傳到整條齒輪鏈，直到每一盞目標燈亮起，整台機器隨之甦醒。\n\n手中的齒輪分為小、中、大三種，齒數、半徑與咬合範圍三者合一。先選好落道再投下，讓齒輪穩穩停在軸上，並落在鄰齒的咬合範圍之內。咬合順利，齒輪鏈就會生長；落點不好，齒輪就會卡死、晃動著被丟棄，並把熱度表推向鏽紅。嚙合的齒輪轉向交替，因此後面的機械艙不只要算位置，還要算方向。沿著導管共有 24 座精心編排的機械艙——發條雲雀、黃銅天象儀、擒縱之門、潮汐調節器、宏偉擒縱等等——每一座都按用掉的齒輪、剩餘齒輪與通電時長計分，最多可得三顆星。若戰役仍不過癮，超速模式無盡運轉：艙體不斷加高，主軸越轉越快，新的目標燈持續出現，直到熱度表填滿為止。\n\n鑄造坊收藏十二枚黃銅紋章，對應初次咬合、精簡機械、滿鏈、大師匠人等里程碑，同時記錄累計嚙合齒輪數與超速模式最高分。整款遊戲為單手操作而設計，場景是一間被暖黃銅光照亮的深青色機械工坊，觸感回饋、震動畫面與粒子迸發都可以在設定中調低。一切都在你的裝置上執行：無帳號、無登入、無廣告、無內購、無需連網。\n\n打開一座機械艙，選一條落道，投下第一顆齒輪。工坊正等著轉起來。",
+      "keywords": "齒輪,機械,物理,益智,解謎,蒸汽龐克,黃銅,離線,單機,休閒,策略,墜落",
+      "promotional_text": "口袋裡的重力機械工坊：投下黃銅齒輪，串起齒輪鏈，點亮每一盞燈。離線執行，無廣告，無內購。"
+    }
+  }
+}
