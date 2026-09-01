@@ -271,6 +271,8 @@
 			);
 			name = CogFall;
 			packageProductDependencies = (
+				5151F108302F2B69000201C2 /* AppsFlyerLib-Static */,
+				5151F10A302F2B76000201C2 /* OneSignalFramework */,
 			);
 			productName = CogFall;
 			productReference = 64A8CE69162639DD474DD783 /* CogFall.app */;
@@ -294,6 +296,10 @@
 			);
 			mainGroup = BFC6EA0161B06A99C0B792A1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5151F107302F2B69000201C2 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+				5151F109302F2B76000201C2 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2B768B73D4E300B10B77FCD0 /* Products */;
 			projectDirPath = "";
@@ -410,7 +416,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
@@ -475,7 +480,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
@@ -558,6 +562,38 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5151F107302F2B69000201C2 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.1;
+			};
+		};
+		5151F109302F2B76000201C2 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5151F108302F2B69000201C2 /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5151F107302F2B69000201C2 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+		5151F10A302F2B76000201C2 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5151F109302F2B76000201C2 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		116CC129808693E342993E63 /* CogFall.xcdatamodeld */ = {

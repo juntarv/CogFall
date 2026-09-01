@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// Purely visual splash — no logic, no timers, no Core Data. Only an entry animation.
-struct SplashScreen: View {
+struct FebaxoPage: View {
     @State private var hasAppeared = false
 
     var body: some View {
