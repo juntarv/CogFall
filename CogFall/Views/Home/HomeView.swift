@@ -1,7 +1,7 @@
 import SwiftUI
 
 /// Orchestrator: splash (1.5s) → onboarding → main app. Persistence lives here, not at App level.
-struct JeviQaxa: View {
+struct HomeView: View {
     private let persistence = PersistenceController.shared
     @StateObject private var store: Store
 
@@ -17,7 +17,7 @@ struct JeviQaxa: View {
         ZStack {
             switch root {
             case .loading:
-                FebaxoPage().transition(.opacity)
+                SplashScreen().transition(.opacity)
             case .onboarding:
                 OnboardingView(onComplete: {
                     store.completeOnboarding()
